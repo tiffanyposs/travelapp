@@ -1,0 +1,17 @@
+
+<div id = "login_body">
+	<section id ="login_container">
+		<div id = "login_header">
+			<h1>Login</h1>
+		</div>
+		<div id = "log_in">
+			<%= form_for @user, as: :session, url: session_url do |f| %>
+			  <label>Email:</label>
+			  <%= f.text_field :email, class: 'login_input' %>
+			  <label>Password:</label>
+			  <%= f.password_field :password, class: 'login_input' %>
+			  <button id = "login_button">Sign In</button>
+			<% end %>
+		</div>
+	</section>
+</div>

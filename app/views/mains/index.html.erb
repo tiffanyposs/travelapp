@@ -1,0 +1,207 @@
+			
+ 
+<!-- header -->
+	<header id = "index_header">
+	<a id = "log_out" href="/logout">Logout</a>
+		<div id = "index_header_container">
+			<h3 id = "location"></h3>
+			<span class="fa fa-arrow-circle-down fa-2x" id = "header_down_arrow"></span>
+			<div id = "index_header_input">
+				<input placeholder="Search">
+				<span class="fa fa-search" id = "header_search"></span>
+			</div>
+
+		</div>
+	</header>
+
+
+<!-- FIRST -->
+	<section id = "index_main">
+		<div id = "main_container">
+
+<!-- 			<div id = "main_home_div">
+				<h2><a href="#">Home</a></h2>
+			</div> -->
+
+			<div id ="main_chats">
+				<div class = "main_button_div">
+					<h2>Chats</h2>
+					<button><span class = "fa fa-plus"></span></button>
+				</div>
+				<div>
+					<ul id = "category_elements">
+						<!-- <li>General</li>
+						<li class = "chats_clicked">Food</li>
+						<li>Lodging</li> -->
+					</ul>
+				</div>
+			</div>
+
+			<div id = "main_friends">
+				<div class = "main_button_div">
+					<h2>Friends</h2>
+					<button><span class = "fa fa-plus"></span></button>
+				</div>
+				<div>
+					<ul>
+						<li><a href="#">Jamie</a></li>
+						<li><a href="#">Madison</a></li>
+						<li><a href="#">Erika</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+
+
+<!-- SECOND -->
+	<section id = "index_suggestion">
+
+
+<!--	<div id = "suggestion_heading">
+			<a href="#">Create New Suggestion</a>
+		</div>
+
+ 		<div class = "suggestion_container">
+			<div>
+				<h3>Steak Night</h3>
+			</div>
+
+			<div class = "sub_heading">
+				<p>Taryn Levy</p>
+				<p>05/02/2015</p>
+			</div>
+
+			<div class = "voting_container">
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-up fa-lg green"></span>
+					<p>4</p>
+				</div>
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-down fa-lg red"></span>
+					<p>2</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class = "suggestion_container">
+			<div>
+				<h3>Steak Night</h3>
+			</div>
+
+			<div class = "sub_heading">
+				<p>Taryn Levy</p>
+				<p>05/02/2015</p>
+			</div>
+
+			<div class = "voting_container">
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-up fa-lg green"></span>
+					<p>4</p>
+				</div>
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-down fa-lg red"></span>
+					<p>2</p>
+				</div>
+			</div>
+		</div>
+
+		<div class = "suggestion_container suggestion_clicked">
+			<div>
+				<h3>Steak Night</h3>
+			</div>
+
+			<div class = "sub_heading">
+				<p>Taryn Levy</p>
+				<p>05/02/2015</p>
+			</div>
+
+			<div class = "voting_container">
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-up fa-lg green"></span>
+					<p>4</p>
+				</div>
+				<div class = "vote">
+					<span class = "fa fa-arrow-circle-o-down fa-lg red"></span>
+					<p>2</p>
+				</div>
+			</div>
+		</div> -->
+
+	</section>
+<!-- THREE -->
+
+	<section id = "index_thread">
+		<div id = "thread_heading">
+
+<!-- 			<div id = "thread_info">
+				<p>Hey Guys! We should try this patio, it ranked top 5 in Puerto Villarta. Who's interested?</p>
+				<a href="#">link here</a>
+			</div>
+
+			<div id = "thread_vote">
+				<div>
+					<p class = "thread_vote_arrow"><span class = "fa fa-arrow-circle-o-up fa-2x green"></span></p>
+					<p class = "thread_dots"><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span></p>
+				</div>
+				<div>
+					<p class = "thread_vote_arrow"><span class = "fa fa-arrow-circle-o-down fa-2x red"></span></p>
+					<p class = "thread_dots"><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span><span class = "fa fa-circle"></span></p>
+				</div>
+
+			</div> -->
+
+		</div>
+
+		<div id = "comment_container">
+<!-- 			<div class = "comment">
+				<img src = "assets/users.jpg">
+				<div>
+					<h2>Lorum ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div> -->
+
+		</div>
+
+		<!-- form for comments -->
+		<div id = "comment_post">
+			<div id = "comment_input" class = "comment_unclicked">
+				<form action="/comments" method="post">
+				    <input type = "hidden" name = "authenticity_token" value="<%= form_authenticity_token %>" required />			
+					<input type="text" name = "comment[content]" placeholder="Make a Comment....." required />
+					<input type = "hidden" id = "suggestion_id"  name = "comment[suggestion_id]" value = "" required />
+					<button>Post</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- modal -->
+		<div id="overlay">
+		     <div>
+		     	<button id = "modal_close">X</button>
+		     	<h3>What do you suggest?</h3>
+		        <form id = "suggestion_form" action = "/suggestions" method = "post">
+			        <input type = "hidden" name = "authenticity_token" value="<%= form_authenticity_token %>" required />
+			        <label>Title:</label>
+		        	<input type="text" name="suggestion[title]" required>
+		        	<label>Comment:</label>
+		        	<input type="text" name="suggestion[content]" required>
+		        	<label>Link:</label>
+		        	<input type="text" name="suggestion[link]" required>
+		        	<input type = "hidden" name = "suggestion[category_id]" value = ""  id = "category_id" required />
+		        	<button>Post</button>
+		        </form>
+		     </div>
+		</div>

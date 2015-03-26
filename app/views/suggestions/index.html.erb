@@ -1,0 +1,7 @@
+<h1>Suggestions</h2>
+
+    <% @suggestions.each do |suggestion| %>
+      <p><%= suggestion.name    %></p>
+      <p><%= suggestion.content %></p>
+      <p><%= suggestion.link    %></p>
+    <% end %>
